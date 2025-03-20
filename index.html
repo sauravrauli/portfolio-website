@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurav Rauli | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/823dda2d7a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav class="nav">
+                <img src="images/logo_transparent.png" class="logo-img">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://github.com/sauravrauli">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/saurav-rauli/">LinkedIn</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+    <div class="header-text">
+        <h1><span>Front-end</span> Developer</h1>
+        <p>My name is <span>Saurav</span> Rauli and I'm a Frontend developer.</p>
+    </div>
+    <main>
+
+        <section id="about">
+            <div class="about-container">
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" fill="none">
+                    <!-- Circle for the head -->
+                    <circle cx="50" cy="30" r="10" fill="#DC143C" />
+                    <!-- Rounded rectangle for the torso -->
+                    <rect x="40" y="40" width="20" height="30" rx="5" fill="#D1D5DB" />
+                    <!-- Left angle bracket -->
+                    <path d="M30 50 L20 60 L30 70" stroke="#DC143C" stroke-width="3" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <!-- Right angle bracket -->
+                    <path d="M70 50 L80 60 L70 70" stroke="#DC143C" stroke-width="3" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <div class="about-text">
+                    <h2>About Me</h2><br>
+                    <p>I am a Web Developer from London, UK. <br>My core skills include HTML, CSS, Javascript, Sass, and
+                        React.<br> I always strive to learn about the newest technologies and frameworks, so I would
+                        make a great addition to any team..</p><br>
+                    <a href="my_cv.pdf" download class="download-btn">Download My CV</a>
+                    <div class="tab-titles">
+
+
+                    </div>
+                </div>
+        </section>
+
+        <section id="skills">
+            <div class="skills-text">
+                <h1 class="skills-title">My Skills</h1>
+                <div class="skills-container">
+
+
+
+                    <div class="skill">
+                        <img src="images/html.png" alt="HTML logo" id="skills-img" class="skills-img img1-animate">
+                        <h2>HTML</h2>
+                    </div>
+                    <div class="skill">
+                        <img src="images/css.png" alt="HTML logo" id="skills-img" class="skills-img img1-animate">
+                        <h2>CSS</h2>
+                    </div>
+
+                    <div class="skill">
+                        <img src="images/jsfinal.png" alt="HTML logo" id="skills-img" class="skills-img img1-animate">
+                        <h2>JS</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="projects-text">
+                <h1>Projects</h1>
+                <div class="projects-list">
+                    <div class="project">
+                        <img src="images/mynhsappphone.png" alt="Project 1" class="project-img">
+                        <div class="layer">
+                            <h3>NHS Shift Management App</h3>
+                            <p>Built with Dart/Flutter and Cloud Firebase as a backend.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <div class="project">
+                        <img src="images/project2.jpg" alt="Project 2" class="project-img">
+                        <div class="layer">
+                            <h3>To-Do List App</h3>
+                            <p>To-Do List description goes here.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <div class="project">
+                        <img src="images/project3.jpg" alt="Project 3" class="project-img">
+                        <div class="layer">
+                            <h3>E-Commerce App</h3>
+                            <p>E-commerce description goes here.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+        </div>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form" , name="submit-to-google-sheet">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+            <span id="msg">
+
+            </span>
+        </section>
+
+
+    </main>
+    <footer>
+        <p>© 2025 My Portfolio</p>
+    </footer>
+    <script>
+        window.onload = function () {
+            // Scrolls to the bottom of the page when it loads
+            window.scrollTo(0, document.body.scrollHeight);
+        };
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbym7IXsmbhYmWc7iitmeIMEFBLA4HenThT-hmaTYuYECATfesJaTyRI0jRhrmb88e9M/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!"
+                    setTimeout(() => {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>

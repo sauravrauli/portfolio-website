@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border: 1px solid red; */
+
+}
+
+body {
+    background: #080808;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    /* Ensures the height of the page is calculated correctly */
+    overflow-y: auto;
+    /* Enables vertical scrolling */
+    margin: 0;
+    padding: 0;
+}
+
+/*<--------header top bar saurav rauli and nav-------->*/
+#header {
+    background-color: #282c34;
+    /* Grey background */
+    padding: 10px 0;
+    /* Vertical padding */
+
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+#header h1 {
+    text-transform: uppercase;
+    margin: 0;
+    /* Removes unnecessary spacing */
+    padding: 0;
+    /* Ensures no extra padding */
+    font-size: 50px
+}
+
+section {
+    padding: 60px;
+    margin: 20px;
+
+}
+
+
+/*<--------footer-------->*/
+
+footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    margin-top: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+
+    padding: 10px 10%;
+
+
+}
+
+.logo-img {
+    width: 140px;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    /* Logo on the left, nav links on the right */
+    align-items: center;
+    /* Centers the items vertically */
+
+
+
+}
+
+
+
+/*<--------navigation-------->*/
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    /* display: flex;
+    list-style: none;
+    gap: 70px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; */
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    position: relative;
+
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2.5px;
+    background: crimson;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+
+}
+
+nav ul li a:hover::after {
+
+    width: 100%;
+
+}
+
+.header-text {
+    margin-top: 10%;
+    font-size: 30px;
+
+
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin: 60px;
+
+}
+
+.header-text p {
+    margin: 60px;
+    font-size: 20px;
+
+}
+
+.header-text p span {
+    color: crimson;
+}
+
+.header-text h1 span {
+    color: crimson;
+}
+
+/*<--------about section-------->*/
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #282c34;
+    color: #fff;
+    padding: 20px;
+
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-container svg {
+    flex-shrink: 0;
+    width: 400px;
+    height: 400px;
+    margin-right: 20px;
+
+}
+
+.about-text h2 {
+    margin: 0;
+    font-size: 50px;
+}
+
+.about-text p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.download-btn {
+
+
+    display: inline-block;
+    /* Makes it behave like a button */
+    background-color: crimson;
+    /* Button background color (blue) */
+    color: #fff;
+    /* White text color */
+    padding: 10px 20px;
+    /* Adds padding inside the button */
+    font-size: 1rem;
+    /* Adjusts the text size */
+    text-align: center;
+    /* Centers text inside the button */
+    text-decoration: none;
+    /* Removes underline from the link */
+    border-radius: 5px;
+    /* Adds rounded corners */
+    cursor: pointer;
+    /* Changes the mouse cursor on hover */
+    position: relative;
+    /* Make it the reference for ::before positioning */
+    overflow: hidden;
+    /* Ensures the animation stays within bounds */
+
+    transition: background-color 0.3s ease-in-out;
+    /* Smooth hover effect */
+
+}
+
+.download-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: left 0.4s ease-in-out;
+}
+
+/* Hover state: highlight swipes in */
+.download-btn:hover::before {
+    left: 0;
+    /* Moves the highlight fully onto the button */
+}
+
+/* Reverse swipe out on hover off */
+.download-btn::before {
+    transition: left 0.4s ease-in-out;
+    /* Keeps swipe smooth */
+}
+
+.download-btn:hover {
+    color: #000;
+    /* Optional text color change */
+}
+
+
+/* Style the form section */
+#contact {
+    padding-bottom: 80px;
+    /* Adds extra space at the bottom of the form */
+    background-color: #282c34;
+    /* Light background */
+    padding: 40px;
+    border-radius: 5%;
+    /* Rounded corners for the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for a modern look */
+    max-width: 600px;
+    /* Restrict the form's width */
+    margin: 0 auto;
+    /* Center the form on the page */
+    text-align: center;
+    /* Center-align the section text */
+}
+
+/* Form headings */
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Style the form itself */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    /* Stack form fields vertically */
+    gap: 20px;
+    /* Add space between fields */
+}
+
+/* Labels for form fields */
+#contact-form label {
+    text-align: left;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+}
+
+/* Inputs and textareas */
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    /* Light border */
+    border-radius: 5px;
+    /* Rounded corners */
+    background-color: #fff;
+    /* White background */
+    color: #333;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    /* Subtle inner shadow */
+}
+
+/* Focus effect for inputs */
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #007bff;
+    /* Blue border on focus */
+    outline: none;
+    /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Glow effect */
+}
+
+/* Style the submit button */
+#contact-form button {
+    background-color: crimson;
+    /* Blue background */
+    color: white;
+    /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Smooth hover effect */
+}
+
+/* Hover effect for the button */
+#contact-form button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+#skills-img {
+    width: 90px;
+    height: auto;
+}
+
+.skills-title {
+    font-size: 60px;
+    margin-left: 60px;
+}
+
+.skills-text h2 {
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding-top: 20px;
+}
+
+.skill {
+    text-align: center;
+}
+
+.projects-text h1 {
+    font-size: 60px;
+    margin: 60px;
+}
+
+
+
+/* #projects{ 
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: #333;
+} */
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin: 60px;
+    padding-left: 125px;
+}
+
+.project {
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    overflow: hidden;
+}
+
+.project-img {
+    max-width: 100%;
+    /* Scale the image to fit its container */
+    max-height: 600px;
+    /* Set a maximum width */
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+    transition: height 0.5s;
+
+}
+
+
+.layer h3 {
+    font-weight: 800;
+    margin-bottom: 20px
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    opacity: 90%;
+
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+.project:hover .layer {
+    height: 100%;
+}
+
+#msg {
+    color: #61b752;
+    margin-top: 20px;
+    display: block;
+}
